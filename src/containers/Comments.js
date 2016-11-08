@@ -8,9 +8,12 @@ class Comments extends Component {
     const { items } = this.props;
 
     return(
-      <ul>
-      { map(items, item => <Comment item={item} key={item.id} />) }
-      </ul>
+      <div>
+        <h3>Comments</h3>
+        <ul>
+          { map(items, item => <Comment item={item} key={item.id} />) }
+        </ul>
+      </div>
     );
   };
 }

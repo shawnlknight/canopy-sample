@@ -1,6 +1,7 @@
 .Header {
   background-color: var(--color-canopy-primary);
   color: var(--color-background-main);
+  font-size: 0.66em;
 }
 
 .Header > h1 {

@@ -15,9 +15,19 @@ class App extends Component {
 
           <ScheduledItems />
 
-          <div>Technician Component</div>
+          <div>
+            <h3>Technician</h3>
+            <p>
+              blah blah blah
+            </p>
+          </div>
 
-          <div>photo component</div>
+          <div>
+            <h3>Photos</h3>
+            <p>
+              blah blah blah
+            </p>
+          </div>
 
           <Comments />
         </div>

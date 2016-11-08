@@ -8,9 +8,12 @@ class ScheduledItems extends Component {
     const { items } = this.props;
 
     return(
-      <ul>
-        { map(items, item => <ScheduledItem item={item} key={item.id} />) }
-      </ul>
+      <div>
+        <h3>Scheduled Services</h3>
+        <ul>
+          { map(items, item => <ScheduledItem item={item} key={item.id} />) }
+        </ul>
+      </div>
     )
   }
 };
