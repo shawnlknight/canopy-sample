@@ -1,5 +1,30 @@
+:root {
+  --color-background-main: #F7F7F7;
+  --color-canopy-primary: #6AC7FD;
+  --color-text-main: #37474f;
+  --color-text-link: var(--canopy-color-primary);
+  --style-font-main: "Avenir Next", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
 body {
+  background-color: var(--color-background-main);
+  color: var(--txt-color);
+  font-family: var(--style-font-main);
+  font-size: 16px;
+  line-height: 1.25;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+a {
+  color: var(--color-text-link);
+  text-decoration: none;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
