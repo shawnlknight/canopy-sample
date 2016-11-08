@@ -2,6 +2,7 @@
   --color-background-main: #F7F7F7;
   --color-canopy-primary: #6AC7FD;
   --color-canopy-primary-dark: #385B6F;
+  --color-canopy-success: #7EBC89;
   --color-text-main: #37474f;
   --color-text-link: var(--canopy-color-primary);
   --style-font-main: "Avenir Next", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
