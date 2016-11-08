@@ -1,12 +1,8 @@
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import scheduledItems from './scheduledItems';
 
-// const rootReducer = combineReducers({
-// });
-
-// TODO: this is a temporary placeholder, this reducer simply returns whatever
-// state it was passed, which is valid but useless
-const rootReducer = (state = {}, action) => {
-  return state;
-};
+const rootReducer = combineReducers({
+  scheduledItems,
+});
 
 export default rootReducer;

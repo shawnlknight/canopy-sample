@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import ScheduledItems from './containers/ScheduledItems'
 
 class App extends Component {
   render() {
@@ -12,13 +13,7 @@ class App extends Component {
           <p>Your Full Service Deluxe visit at 1234 Main Street has been completed on Monday, November 7th, 2016.</p>
         </div>
 
-        <div>
-          <h3>Scheduled Services</h3>
-          <ul>
-            <li>Service One</li>
-            <li>Service Two</li>
-          </ul>
-        </div>
+        <ScheduledItems />
 
         <div>Technician Component</div>
 
