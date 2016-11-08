@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import ScheduledItems from './containers/ScheduledItems'
+import Comments from './containers/Comments';
+import ScheduledItems from './containers/ScheduledItems';
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
 
         <div>photo component</div>
 
-        <div>comment component</div>
+        <Comments />
       </div>
     );
   }
