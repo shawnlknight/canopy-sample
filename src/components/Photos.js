@@ -8,7 +8,7 @@ const Photos = ({ items }) => {
       <div className="grid">
       { items.map(item => {
         return(
-          <div className="image-tile">
+          <div className="image-tile" key={item.id}>
             <h4>{item.title}</h4>
             <img alt={item.title} src={item.url} />
           </div>
@@ -23,10 +23,12 @@ const Photos = ({ items }) => {
 Photos.defaultProps = {
   items: [
     {
+      id: 1,
       title: "Picture One",
       url: "http://lorempixel.com/output/food-q-c-406-325-10.jpg",
     },
     {
+      id: 2,
       title: "Picture Two",
       url: "http://lorempixel.com/output/transport-q-c-406-325-9.jpg",
     },
