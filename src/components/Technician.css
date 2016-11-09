@@ -1,0 +1,11 @@
+.Technician > img {
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+}
+
+.Technician > h4 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 0.5em;
+}

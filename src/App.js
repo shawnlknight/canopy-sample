@@ -4,6 +4,7 @@ import Comments from './containers/Comments';
 import Header from './components/Header';
 import JobInfo from './components/JobInfo';
 import ScheduledItems from './containers/ScheduledItems';
+import Technician from './components/Technician';
 
 class App extends Component {
   render() {
@@ -15,12 +16,7 @@ class App extends Component {
 
           <ScheduledItems />
 
-          <div>
-            <h3>Technician</h3>
-            <p>
-              blah blah blah
-            </p>
-          </div>
+          <Technician />
 
           <div>
             <h3>Photos</h3>
