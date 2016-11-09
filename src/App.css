@@ -1,1 +1,6 @@
 .App > .main-content { margin-top: 2em; }
+
+.App .section {
+  clear: both;
+  margin-top: 2em;
+}

@@ -2,13 +2,14 @@ import React, { PropTypes } from 'react';
 import './Technician.css';
 
 const Technician = ({
+  className,
   imageUrl,
   jobCount,
   name,
   rating,
 }) => {
   return (
-    <div className="Technician">
+    <div className={`${className} Technician`}>
       <h3>Your Technician</h3>
       <img alt={name} src={imageUrl} />
       <h4>{name}</h4>
@@ -17,6 +18,7 @@ const Technician = ({
 };
 
 Technician.defaultProps = {
+  className: "",
   imageUrl: "http://www.fillmurray.com/150/150",
   jobCount: 317,
   name: "Travis N",
@@ -24,6 +26,7 @@ Technician.defaultProps = {
 };
 
 Technician.propTypes = {
+  className: PropTypes.string,
   imageUrl: PropTypes.string.isRequired,
   jobCount: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,

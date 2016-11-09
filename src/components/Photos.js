@@ -1,9 +1,12 @@
 import React, { PropTypes } from 'react';
 import './Photos.css';
 
-const Photos = ({ items }) => {
+const Photos = ({
+  className,
+  items,
+}) => {
   return(
-    <div className="Photos">
+    <div className={`${className} Photos`}>
       <h3>Photos</h3>
       <div className="grid">
       { items.map(item => {
@@ -21,6 +24,7 @@ const Photos = ({ items }) => {
 };
 
 Photos.defaultProps = {
+  className: "",
   items: [
     {
       id: 1,
@@ -36,6 +40,7 @@ Photos.defaultProps = {
 };
 
 Photos.propTypes = {
+  className: PropTypes.string,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,

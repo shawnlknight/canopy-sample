@@ -5,10 +5,13 @@ import ScheduledItem from '../components/ScheduledItem';
 
 class ScheduledItems extends Component {
   render() {
-    const { items } = this.props;
+    const {
+      className,
+      items,
+    } = this.props;
 
     return(
-      <div>
+      <div className={`${className} ScheduledItems`}>
         <h3>Scheduled Services</h3>
         <ul>
           { map(items, item => <ScheduledItem item={item} key={item.id} />) }
@@ -18,11 +21,13 @@ class ScheduledItems extends Component {
   }
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, ownProps) => ({
+  className: ownProps.className || "",
   items: state.scheduledItems,
 });
 
 ScheduledItems.propTypes = {
+  className: PropTypes.string,
   items: PropTypes.object.isRequired,
 };
 

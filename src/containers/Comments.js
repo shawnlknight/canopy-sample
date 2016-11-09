@@ -5,10 +5,13 @@ import Comment from '../components/Comment';
 
 class Comments extends Component {
   render() {
-    const { items } = this.props;
+    const {
+      className,
+      items,
+    } = this.props;
 
     return(
-      <div>
+      <div className={`${className} Comments`}>
         <h3>Comments</h3>
         <ul>
           { map(items, item => <Comment item={item} key={item.id} />) }
@@ -18,11 +21,13 @@ class Comments extends Component {
   };
 }
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, ownProps) => ({
+  className: ownProps.className || "",
   items: state.comments,
 });
 
 Comments.propTypes = {
+  className: PropTypes.string,
   items: PropTypes.object.isRequired,
 };
 

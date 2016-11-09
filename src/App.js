@@ -13,11 +13,11 @@ class App extends Component {
       <div className="App">
         <Header />
         <div className="main-content content-aligned">
-          <JobInfo />
-          <ScheduledItems />
-          <Technician />
-          <Photos />
-          <Comments />
+          <JobInfo className="section" />
+          <ScheduledItems className="section" />
+          <Technician className="section" />
+          <Photos className="section" />
+          <Comments className="section" />
         </div>
       </div>
     );
