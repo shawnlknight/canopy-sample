@@ -1,0 +1,19 @@
+.Photos > .grid > .image-tile {
+  background-color: red;
+  height: 10em;
+  position: relative;
+  width: 10em;
+}
+
+.Photos > .grid > .image-tile > img {
+  height: 100%;
+  width: 100%;
+}
+
+.Photos > .grid > .image-tile > h4 {
+  bottom: 0.25em;
+  color: white;
+  left: 0.25em;
+  margin: 0;
+  position: absolute;
+}

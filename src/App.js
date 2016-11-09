@@ -3,6 +3,7 @@ import './App.css';
 import Comments from './containers/Comments';
 import Header from './components/Header';
 import JobInfo from './components/JobInfo';
+import Photos from './components/Photos';
 import ScheduledItems from './containers/ScheduledItems';
 import Technician from './components/Technician';
 
@@ -13,18 +14,9 @@ class App extends Component {
         <Header />
         <div className="main-content content-aligned">
           <JobInfo />
-
           <ScheduledItems />
-
           <Technician />
-
-          <div>
-            <h3>Photos</h3>
-            <p>
-              blah blah blah
-            </p>
-          </div>
-
+          <Photos />
           <Comments />
         </div>
       </div>
