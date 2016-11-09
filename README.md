@@ -116,9 +116,9 @@ As a customer or admin, when I look at the comment stream at the bottom of the p
 
 Don't worry if you are unfamiliar with **redux**, there are some concepts that may be new, especially if you've never used **React** or some kind of **React-inspired** framework. I've found [official Redux docs](http://redux.js.org) to be extremely helpful. I would recommend reading through the entire [Basics Section](http://redux.js.org/docs/basics/) to get an idea of how data flows through the framework. You can also take a look at code in this **sample project**. Before you add any of the features listed [above](#user-stories), there is really only one piece of data that is updated. When the **scheduled services** are clicked the completed state is toggled. You can take a look at the behavior in the interface and reference it back to the following relevant files:
 
-- [containers/ScheduledItems](./containers/ScheduledItems.js)
-- [components/ScheduledItem](./components/ScheduledItem.js)
-- [actions/index](./actions/index.js)
-- [reducers/scheduledItems](./reducers/scheduledItems.js)
+- [containers/ScheduledItems](./src/containers/ScheduledItems.js)
+- [components/ScheduledItem](./src/components/ScheduledItem.js)
+- [actions/index](./src/actions/index.js)
+- [reducers/scheduledItems](./src/reducers/scheduledItems.js)
 
 Feel free to contact me with any questions.
