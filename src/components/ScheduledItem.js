@@ -1,11 +1,15 @@
 import React, { PropTypes } from 'react';
 import './ScheduledItem.css';
 
-const ScheduledItem = ({ item }) => {
+const ScheduledItem = ({
+  clickHandler,
+  item,
+}) => {
   return(
     <li
       className={`ScheduledItem ${ item.completed ? "completed" : "" }`}
       id={item.id}
+      onClick={clickHandler}
     >
       { item.completed
         ? <i className="fa-li fa fa-check-circle-o"></i>
@@ -17,6 +21,7 @@ const ScheduledItem = ({ item }) => {
 }
 
 ScheduledItem.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
   item: PropTypes.shape({
     completed: PropTypes.bool.isRequired,
     id: PropTypes.number.isRequired,
