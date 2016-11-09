@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
+import './Comment.css';
 
 const Comment = ({ item }) => {
   return(
     <li
-      className="type"
+      className="Comment type"
     >
       <h4>{item.author} says...</h4>
       <p>{item.body}</p>

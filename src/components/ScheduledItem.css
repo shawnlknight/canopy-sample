@@ -1,0 +1,8 @@
+.ScheduledItem:hover {
+  color: var(--color-canopy-success);
+  cursor: pointer;
+  display: inline-block;
+}
+.ScheduledItem.completed:hover {
+  color: var(--color-canopy-danger);
+}

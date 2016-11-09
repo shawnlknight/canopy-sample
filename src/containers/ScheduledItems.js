@@ -13,7 +13,7 @@ class ScheduledItems extends Component {
     return(
       <div className={`${className} ScheduledItems`}>
         <h3>Scheduled Services</h3>
-        <ul>
+        <ul className="fa-ul">
           { map(items, item => <ScheduledItem item={item} key={item.id} />) }
         </ul>
       </div>

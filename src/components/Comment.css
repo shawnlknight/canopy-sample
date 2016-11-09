@@ -1,0 +1,10 @@
+.Comment { margin-bottom: 0.5em; }
+
+.Comment > h4 {
+  font-weight: 500;
+  margin: 0;
+}
+.Comment > p {
+  font-weight: 200;
+  margin: 0;
+}

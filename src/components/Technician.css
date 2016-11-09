@@ -1,11 +1,18 @@
+.Technician {
+  overflow: hidden;
+  position: relative;
+}
+
 .Technician > img {
   border-radius: 50%;
+  float: left;
   height: 5em;
   width: 5em;
 }
 
-.Technician > h4 {
-  font-size: 1.1em;
-  font-weight: 500;
-  margin-top: 0.5em;
+.Technician .details {
+  bottom: 0;
+  left: 5.5em;
+  margin-bottom: 0.5em;
+  position: absolute;
 }

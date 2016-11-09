@@ -1,11 +1,16 @@
 import React, { PropTypes } from 'react';
+import './ScheduledItem.css';
 
 const ScheduledItem = ({ item }) => {
   return(
     <li
-      className={ item.completed ? "completed" : null }
+      className={`ScheduledItem ${ item.completed ? "completed" : "" }`}
       id={item.id}
     >
+      { item.completed
+        ? <i className="fa-li fa fa-check-circle-o"></i>
+        : <i className="fa-li fa fa-circle-o"></i>
+      }
       {item.name}
     </li>
   );

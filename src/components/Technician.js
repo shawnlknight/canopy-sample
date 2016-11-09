@@ -12,7 +12,11 @@ const Technician = ({
     <div className={`${className} Technician`}>
       <h3>Your Technician</h3>
       <img alt={name} src={imageUrl} />
-      <h4>{name}</h4>
+      <ul className="details">
+        <li>{name}</li>
+        <li>Rating: {rating}</li>
+        <li>Jobs Performed: {jobCount}</li>
+      </ul>
     </div>
   );
 };

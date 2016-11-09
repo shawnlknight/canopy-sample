@@ -1,6 +1,9 @@
+.Photos { overflow: hidden; }
+
 .Photos > .grid > .image-tile {
-  background-color: red;
+  float: left;
   height: 10em;
+  margin-right: 0.5em;
   position: relative;
   width: 10em;
 }
@@ -11,9 +14,13 @@
 }
 
 .Photos > .grid > .image-tile > h4 {
-  bottom: 0.25em;
+  background-color: black;
+  bottom: 0;
   color: white;
-  left: 0.25em;
+  left: 0;
   margin: 0;
+  opacity: 0.75;
+  padding: 0.25em;
   position: absolute;
+  width: calc(100% - 0.5em);
 }
