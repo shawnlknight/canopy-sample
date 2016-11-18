@@ -23,7 +23,36 @@ This project is a sample exercise designed for you to show us what you got! We a
 
 ### Installation
 
-- create your own fork of this repository.
+- duplicate this repository (do not fork)
+
+    - first create a new repo under your github account named `canopy-sample`
+
+    - bare clone original sample
+
+    ```sh
+    git clone --bare https://github.com/packpurchase/sample.git
+    ```
+
+    - push mirrored version to your new repo
+
+    ```sh
+    cd sample
+    git push --mirror https://github.com/<yourusername>/canopy-sample.git
+    ```
+
+    - remove bare clone
+
+    ```sh
+    cd ..
+    rm -rf sample
+    ```
+
+    - pull down your new repo
+
+    ```sh
+    git clone git@github.com:<yourusername>/canopy-sample.git
+    ```
+
 - install dependencies
 
 ```sh
@@ -50,7 +79,7 @@ More details about these and other available scripts can be found [here](https:/
 
 ### Development
 
-Pick out the features you would like to work on from [the list below](#user-stories), implement the given story and submit as a pull request back to this repository. I would prefer a separate pull request for each story you picked to work.
+Pick out the features you would like to work on from [the list below](#user-stories), implement the given story in a feature branch and submit as a pull request against your own master branch. I would prefer a separate pull request for each story you picked to work.
 
 ## User Stories
 
