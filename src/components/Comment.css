@@ -1,4 +1,10 @@
-.Comment { margin-bottom: 0.5em; }
+.Comment {
+  display: table;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: var(--color-canopy-primary);
+}
 
 .Comment > h4 {
   font-weight: 500;
@@ -6,5 +12,5 @@
 }
 .Comment > p {
   font-style: italic;
-  margin: 0;
+  margin: 0 2em;
 }
