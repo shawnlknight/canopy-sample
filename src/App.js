@@ -17,7 +17,7 @@ class App extends Component {
           <ScheduledItems className="section" />
           <Technician className="section" />
           <Photos className="section" />
-          <Comments className="section" />
+          <Comments className="section section-secondary" />
         </div>
       </div>
     );
