@@ -3,9 +3,10 @@
 .Photos > .grid > .image-tile {
   float: left;
   height: 10em;
-  margin-right: 0.5em;
-  position: relative;
   width: 10em;
+  margin-right: 1em;
+  position: relative;
+  text-align: center;
 }
 
 .Photos > .grid > .image-tile > img {
@@ -16,10 +17,11 @@
 .Photos > .grid > .image-tile > h4 {
   background-color: black;
   bottom: 0;
-  color: white;
+  color: var(--color-background-main);
+  letter-spacing: 0.1em;
   left: 0;
   margin: 0;
-  opacity: 0.75;
+  opacity: 0.85;
   padding: 0.25em;
   position: absolute;
   width: calc(100% - 0.5em);
