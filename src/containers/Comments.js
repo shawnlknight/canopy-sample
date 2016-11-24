@@ -12,7 +12,7 @@ class Comments extends Component {
 
     return(
       <div className={`${className} Comments`}>
-        <h3>Comments</h3>
+        <h3><i className="fa fa-comments-o" aria-hidden="true"></i> Comments</h3>
         <ul>
           { map(items, item => <Comment item={item} key={item.id} />) }
         </ul>

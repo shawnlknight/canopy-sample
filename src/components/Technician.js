@@ -10,7 +10,7 @@ const Technician = ({
 }) => {
   return (
     <div className={`${className} Technician`}>
-      <h3>Your Technician</h3>
+      <h3><i className="fa fa-wrench" aria-hidden="true"></i> Your Technician</h3>
       <img alt={name} src={imageUrl} />
       <ul className="details">
         <li>{name}</li>

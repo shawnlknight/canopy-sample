@@ -7,7 +7,7 @@ const Photos = ({
 }) => {
   return(
     <div className={`${className} Photos`}>
-      <h3>Photos</h3>
+      <h3><i className="fa fa-picture-o" aria-hidden="true"></i> Photos</h3>
       <div className="grid">
       { items.map(item => {
         return(

@@ -14,7 +14,7 @@ class ScheduledItems extends Component {
 
     return(
       <div className={`${className} ScheduledItems`}>
-        <h3>Scheduled Services</h3>
+        <h3><i className="fa fa-calendar-o" aria-hidden="true"></i> Scheduled Services</h3>
         <ul className="fa-ul">
           { map(items, item => (
               <ScheduledItem

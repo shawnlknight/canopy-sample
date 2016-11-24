@@ -13,11 +13,11 @@
 
 .App .section h3 {
   margin-bottom: 1em;
-  border: 2px solid var(--color-canopy-primary);
-  border-radius: 0.05em;
-  width: 10em;
+  width: 12em;
   padding: 0.5em;
   text-align: center;
+  border: 2px solid var(--color-canopy-primary);
+  border-radius: 0.05em;
   color: var(--color-canopy-primary);
 }
 
