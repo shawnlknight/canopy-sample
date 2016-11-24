@@ -13,7 +13,7 @@ const Technician = ({
       <h3><i className="fa fa-wrench" aria-hidden="true"></i> Your Technician</h3>
       <img alt={name} src={imageUrl} />
       <ul className="details">
-        <li>{name}</li>
+        <li><strong>{name}</strong></li>
         <li>Rating: {rating}</li>
         <li>Jobs Performed: {jobCount}</li>
       </ul>
