@@ -1,16 +1,14 @@
-.Comment {
-  display: table;
-  margin-bottom: 1em;
-  padding: 1em;
-  border-radius: 1em;
-  background-color: var(--color-canopy-primary);
-}
+.Comment { margin-bottom: 1em; }
 
 .Comment > h4 {
   font-weight: 500;
   margin: 0;
 }
 .Comment > p {
-  font-style: italic;
-  margin: 0 2em;
+  display: table;
+  margin: 0 1em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: var(--color-canopy-primary);
+  color: var(--color-background-main);
 }
