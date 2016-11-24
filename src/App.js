@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Comments from './containers/Comments';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import JobInfo from './components/JobInfo';
 import Photos from './components/Photos';
@@ -19,6 +20,7 @@ class App extends Component {
           <Photos className="section" />
         </div>
         <Comments className="section section-secondary" />
+        <Footer />
       </div>
     );
   }
