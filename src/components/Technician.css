@@ -1,9 +1,4 @@
-.Technician {
-  overflow: hidden;
-  position: relative;
-}
-
-.Technician > img {
+.Technician > div > img {
   border-radius: 50%;
   float: left;
   height: 5em;
@@ -11,8 +6,14 @@
 }
 
 .Technician .details {
-  bottom: 0;
-  left: 5.5em;
-  margin-bottom: 0.5em;
-  position: absolute;
+  float: right;
+  margin: 0.5em 5em 0 0;
+}
+
+@media (max-width: 1100px) {
+  .Technician .details {
+    float: none;
+    margin: 0;
+    width: 15em;
+  }
 }

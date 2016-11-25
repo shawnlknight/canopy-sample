@@ -15,9 +15,11 @@ class App extends Component {
         <Header />
         <div className="main-content content-aligned">
           <JobInfo className="section" />
-          <ScheduledItems className="section" />
-          <Technician className="section" />
-          <Photos className="section" />
+          <div className="flex-grid-thirds">
+            <ScheduledItems className="section col" />
+            <Technician className="section col" />
+            <Photos className="section col" />
+          </div>
         </div>
         <Comments className="section section-secondary" />
         <Footer />

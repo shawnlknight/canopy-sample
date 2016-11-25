@@ -9,12 +9,12 @@ const Photos = ({
     <div className={`${className} Photos`}>
       <h3><i className="fa fa-picture-o" aria-hidden="true"></i> Photos</h3>
       <div className="grid">
-      { items.map(item => {
-        return(
-          <div className="image-tile" key={item.id}>
-            <h4>{item.title}</h4>
-            <img alt={item.title} src={item.url} />
-          </div>
+        { items.map(item => {
+          return(
+            <div className="image-tile inline-block " key={item.id}>
+              <h4>{item.title}</h4>
+              <img alt={item.title} src={item.url} />
+            </div>
         );
       })
       }

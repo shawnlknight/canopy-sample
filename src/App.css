@@ -1,11 +1,11 @@
 .App > .main-content { margin-top: 2em; }
 
 .App .section {
-  clear: both;
   margin-top: 2em;
 }
 
 .App .section-secondary {
+  clear: both;
   padding: 0.5em 2em;
   border-radius: 0.05em;
   background-color: var(--color-background-secondary);

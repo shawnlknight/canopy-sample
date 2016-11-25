@@ -11,12 +11,16 @@ const Technician = ({
   return (
     <div className={`${className} Technician`}>
       <h3><i className="fa fa-wrench" aria-hidden="true"></i> Your Technician</h3>
-      <img alt={name} src={imageUrl} />
-      <ul className="details">
-        <li><strong>{name}</strong></li>
-        <li>Rating: {rating}</li>
-        <li>Jobs Performed: {jobCount}</li>
-      </ul>
+      <div className="inline-block">
+        <img alt={name} src={imageUrl} />
+      </div>
+      <div className="inline-block details">
+        <ul>
+          <li><strong>{name}</strong></li>
+          <li>Rating: {rating}</li>
+          <li>Jobs Performed: {jobCount}</li>
+        </ul>
+      </div>
     </div>
   );
 };
