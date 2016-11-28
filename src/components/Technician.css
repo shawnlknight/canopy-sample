@@ -1,13 +1,13 @@
-.Technician > div > img {
+.Technician img {
   border-radius: 50%;
   float: left;
-  height: 5em;
-  width: 5em;
+  height: 7em;
+  width: 7em;
 }
 
 .Technician .details {
   float: right;
-  margin: 0.5em 5em 0 0;
+  margin: 0.5em 2em 0 0;
 }
 
 @media (max-width: 1100px) {

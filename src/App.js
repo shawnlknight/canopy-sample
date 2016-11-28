@@ -16,12 +16,12 @@ class App extends Component {
         <div className="main-content content-aligned">
           <JobInfo className="section" />
           <div className="flex-grid-thirds">
-            <ScheduledItems className="section col" />
-            <Technician className="section col" />
-            <Photos className="section col" />
+            <ScheduledItems className="section bg-color-lightgray card col" />
+            <Technician className="section bg-color-lightgray card col" />
+            <Photos className="section bg-color-lightgray card col" />
           </div>
         </div>
-        <Comments className="section section-secondary" />
+        <Comments className="section bg-color-lightgray section-secondary" />
         <Footer />
       </div>
     );

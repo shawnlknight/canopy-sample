@@ -1,26 +1,20 @@
 .App > .main-content { margin-top: 2em; }
 
 .App .section {
-  margin-top: 2em;
+  padding: 0.1em 0 1em;
 }
 
 .App .section-secondary {
   clear: both;
   padding: 0.5em 2em;
-  border-radius: 0.05em;
-  background-color: var(--color-background-secondary);
 }
 
 .App .section h3 {
-  margin-bottom: 1em;
-  width: 12em;
-  padding: 0.5em;
+  padding-bottom: 0.5em;
   text-align: center;
-  border: 2px solid var(--color-canopy-primary);
-  border-radius: 0.05em;
   color: var(--color-canopy-primary);
 }
 
-.App .section-secondary h3 {
-  margin: 1em auto;
+.App .section .contents {
+  margin-left: 1em;
 }
