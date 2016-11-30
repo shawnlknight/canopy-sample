@@ -69,11 +69,12 @@ li {
   margin-bottom: 5em;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1024px) {
   .flex-grid-thirds {
     display: block;
     clear: both;
   }
+  
   .flex-grid-thirds .col {
     width: 100%;
   }

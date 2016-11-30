@@ -1,7 +1,11 @@
+.Photos > .grid {
+  text-align: center;
+}
+
 .Photos > .grid > .image-tile {
   height: 8em;
   width: 8em;
-  margin-left: 1em;
+  margin: 0 0.5em;
   position: relative;
   text-align: center;
 }
