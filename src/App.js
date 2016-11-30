@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Comments from './containers/Comments';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import JobInfo from './components/JobInfo';
 import Photos from './components/Photos';
@@ -14,11 +15,14 @@ class App extends Component {
         <Header />
         <div className="main-content content-aligned">
           <JobInfo className="section" />
-          <ScheduledItems className="section" />
-          <Technician className="section" />
-          <Photos className="section" />
-          <Comments className="section" />
+          <div className="flex-grid-thirds">
+            <ScheduledItems className="section bg-color-lightgray card col" />
+            <Technician className="section bg-color-lightgray card col" />
+            <Photos className="section bg-color-lightgray card col" />
+          </div>
         </div>
+        <Comments className="section bg-color-lightgray section-secondary" />
+        <Footer />
       </div>
     );
   }

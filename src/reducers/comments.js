@@ -1,7 +1,7 @@
 const initialState = {
   1: {
     author: "Travis N",
-    body: "I finished all the work in your yard. It was a pleasure serving your!",
+    body: "I finished all the work in your yard. It was a pleasure serving you!",
     id: 1,
     type: "tech",
   },

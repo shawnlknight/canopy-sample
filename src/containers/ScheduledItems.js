@@ -14,8 +14,8 @@ class ScheduledItems extends Component {
 
     return(
       <div className={`${className} ScheduledItems`}>
-        <h3>Scheduled Services</h3>
-        <ul className="fa-ul">
+        <h3><i className="fa fa-calendar-o" aria-hidden="true"></i> Scheduled Services</h3>
+        <ul className="fa-ul contents">
           { map(items, item => (
               <ScheduledItem
                 clickHandler={updateScheduledItem.bind(null, item)}

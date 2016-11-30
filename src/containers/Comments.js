@@ -12,8 +12,8 @@ class Comments extends Component {
 
     return(
       <div className={`${className} Comments`}>
-        <h3>Comments</h3>
-        <ul>
+        <h3><i className="fa fa-comments-o" aria-hidden="true"></i> Comments</h3>
+        <ul className="content-aligned">
           { map(items, item => <Comment item={item} key={item.id} />) }
         </ul>
       </div>

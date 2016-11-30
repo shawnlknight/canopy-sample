@@ -6,3 +6,13 @@
 .ScheduledItem.completed:hover {
   color: var(--color-canopy-danger);
 }
+
+.ScheduledItems ul {
+  padding-left: 1.5em;
+}
+
+@media (max-width: 850px) {
+  .ScheduledItems ul {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.Footer {
+  background-color: var(--color-canopy-primary-dark);
+  color: var(--color-background-main);
+  font-size: 0.7em;
+  padding: 2.5em;
+}
+
+.Footer > h2 {
+  font-weight: lighter;
+}
