@@ -1,18 +1,29 @@
 import React, { PropTypes } from 'react';
 import './Comment.css';
 
-const Comment = ({ item }) => {
+const Comment = ({
+  clickHandler,
+  item
+}) => {
   return(
-    <li
-      className="Comment type"
-    >
+    <li className="Comment type">
       <h4>{item.author}</h4>
       <p>{item.body}</p>
+      { item.type === "tech" &&
+        <span
+          aria-label="Delete Comment"
+          title="Delete Comment"
+          id={item.id}
+          onClick={clickHandler}>
+          <i className="fa fa-lg fa-trash-o" aria-hidden="true"></i>
+        </span>
+      }
     </li>
   );
 }
 
 Comment.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
   item: PropTypes.shape({
     author: PropTypes.string.isRequired,
     body: PropTypes.string.isRequired,
