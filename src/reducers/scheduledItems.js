@@ -23,13 +23,14 @@ const mergedArgs = (state, itemId, args) => {
 
 const scheduledItems = (state = initialState, action) => {
   switch (action.type) {
-  case actionType.UPDATE_SCHEDULED_ITEM:
-    return {
-        ...omit(state, action.itemId),
-      [action.itemId]: mergedArgs(state, action.itemId, action.args),
-    };
-  default:
-    return state;
+    case actionType.UPDATE_SCHEDULED_ITEM:
+      if (!action.args.completed) return state;
+      return {
+          ...omit(state, action.itemId),
+        [action.itemId]: mergedArgs(state, action.itemId, action.args),
+      };
+    default:
+      return state;
   }
 };
 
