@@ -8,16 +8,18 @@ const Comment = ({
   return(
     <li className="Comment type">
       <h4>{item.author}</h4>
-      <p>{item.body}</p>
-      { item.type === "tech" &&
-        <span
-          aria-label="Delete Comment"
-          title="Delete Comment"
-          id={item.id}
-          onClick={clickHandler}>
-          <i className="fa fa-lg fa-trash-o" aria-hidden="true"></i>
-        </span>
-      }
+      <div>
+        { item.type === "tech" &&
+          <span
+            aria-label="Delete Comment"
+            title="Delete Comment"
+            id={item.id}
+            onClick={clickHandler}>
+            <i className="fa fa-lg fa-trash-o" aria-hidden="true"></i>
+          </span>
+        }
+        <p>{item.body}</p>
+      </div>
     </li>
   );
 }
