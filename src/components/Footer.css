@@ -1,6 +1,6 @@
 .Footer {
   background-color: var(--color-canopy-primary-dark);
-  color: var(--color-background-main);
+  color: var(--color-canopy-primary);
   font-size: 0.7em;
   padding: 2.5em;
 }
