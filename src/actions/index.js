@@ -6,8 +6,7 @@ export const updateScheduledItem = (itemId, args) => ({
   type: actionTypes.UPDATE_SCHEDULED_ITEM,
 });
 
-export const deleteComment = (itemId, args) => ({
-  args,
+export const deleteComment = (itemId) => ({
   itemId,
   type: actionTypes.DELETE_COMMENT,
 });
