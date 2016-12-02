@@ -2,10 +2,11 @@
   --color-background-main: #F7F7F7;
   --color-background-secondary: rgba(211, 211, 211, 0.3);
   --color-canopy-danger: #D1495B;
-  --color-canopy-primary: #6AC7FD;
+  --color-canopy-primary: #51c5fe;
   --color-canopy-primary-dark: #34495e;
   --color-canopy-success: #7EBC89;
   --color-text-main: #37474f;
+  --color-text-secondary: #6b6a6a;
   --color-text-link: var(--color-canopy-primary);
   --color-separator-main: #c7c7c7;
   --style-font-main: "Avenir Next", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;

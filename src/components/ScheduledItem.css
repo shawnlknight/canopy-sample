@@ -1,10 +1,10 @@
-.ScheduledItem:hover {
+.ScheduledItem:not(.completed):hover {
   color: var(--color-canopy-success);
   cursor: pointer;
-  display: inline-block;
 }
-.ScheduledItem.completed:hover {
-  color: var(--color-canopy-danger);
+
+.ScheduledItem.completed {
+  color: var(--color-text-secondary);
 }
 
 .ScheduledItems ul {
