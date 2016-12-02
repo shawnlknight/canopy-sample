@@ -17,11 +17,11 @@ class ScheduledItems extends Component {
         <h3><i className="fa fa-calendar-o" aria-hidden="true"></i> Scheduled Services</h3>
         <ul className="fa-ul contents">
           { map(items, item => (
-              <ScheduledItem
-                clickHandler={updateScheduledItem.bind(null, item)}
-                item={item}
-                key={item.id}
-              />
+            <ScheduledItem
+              clickHandler={updateScheduledItem.bind(null, item)}
+              item={item}
+              key={item.id}
+            />
           ))}
         </ul>
       </div>

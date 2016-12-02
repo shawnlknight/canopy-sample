@@ -1,14 +1,41 @@
 .Comment { margin-bottom: 1em; }
 
+.Comment > div {
+  max-width: 35em;
+}
+
 .Comment > h4 {
   font-weight: 500;
   margin: 0;
 }
-.Comment > p {
+.Comment > div > p {
   display: table;
+  width: 80%;
   margin: 0 1em;
   padding: 1em;
   border-radius: 1em;
   background-color: var(--color-canopy-primary);
   color: var(--color-background-main);
+}
+
+.Comment > div button {
+  float: right;
+  width: 10%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Comment > div button:hover {
+  color: var(--color-canopy-danger);
+}
+
+@media (max-width: 650px) {
+  .Comment > div > p {
+    width: 75%;
+  }
+
+  .Comment > div button {
+    width: 5%;
+  }
 }

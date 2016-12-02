@@ -5,8 +5,9 @@
   --color-canopy-primary: #6AC7FD;
   --color-canopy-primary-dark: #34495e;
   --color-canopy-success: #7EBC89;
+  --color-canopy-danger: #a94442;
   --color-text-main: #37474f;
-  --color-text-link: var(--canopy-color-primary);
+  --color-text-link: var(--color-canopy-primary);
   --color-separator-main: #c7c7c7;
   --style-font-main: "Avenir Next", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
@@ -74,7 +75,7 @@ li {
     display: block;
     clear: both;
   }
-  
+
   .flex-grid-thirds .col {
     width: 100%;
   }
