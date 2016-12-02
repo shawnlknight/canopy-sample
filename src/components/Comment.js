@@ -10,13 +10,13 @@ const Comment = ({
       <h4>{item.author}</h4>
       <div>
         { item.type === "tech" &&
-          <span
+          <button
             aria-label="Delete Comment"
             title="Delete Comment"
             id={item.id}
             onClick={clickHandler}>
-            <i className="fa fa-lg fa-trash-o" aria-hidden="true"></i>
-          </span>
+            <i className="fa fa-2x fa-trash-o" aria-hidden="true"></i>
+          </button>
         }
         <p>{item.body}</p>
       </div>

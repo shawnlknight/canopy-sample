@@ -18,13 +18,15 @@
   color: var(--color-background-main);
 }
 
-.Comment > div > span {
+.Comment > div button {
   float: right;
   width: 10%;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
-.Comment > div > span:hover {
+.Comment > div button:hover {
   color: var(--color-canopy-danger);
 }
 
@@ -33,7 +35,7 @@
     width: 75%;
   }
 
-  .Comment > div > span {
+  .Comment > div button {
     width: 5%;
   }
 }
