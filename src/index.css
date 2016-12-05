@@ -60,6 +60,19 @@ li {
   border-radius: 0.05em;
 }
 
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  cursor: pointer;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.1);
+}
+
 .flex-grid-thirds {
   display: flex;
   justify-content: space-between;

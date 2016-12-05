@@ -11,7 +11,7 @@ const Photos = ({
       <div className="grid">
         { items.map(item => {
           return(
-            <div className="image-tile inline-block " key={item.id}>
+            <div className="image-tile inline-block grow" key={item.id}>
               <h4>{item.title}</h4>
               <img alt={item.title} src={item.url} />
             </div>
