@@ -1,14 +1,16 @@
-.Comment { margin-bottom: 1em; }
+.Comment { margin-bottom: 2em; }
 
 .Comment > div {
   max-width: 35em;
 }
 
-.Comment > h4 {
+.Comment h4 {
   font-weight: 500;
   margin: 0;
+  width: 80%;
 }
-.Comment > div > p {
+
+.Comment div p {
   display: table;
   width: 80%;
   margin: 0 1em;
@@ -18,7 +20,12 @@
   color: var(--color-background-main);
 }
 
-.Comment > div button {
+.Comment div p.customer {
+  background-color: var(--color-background-main);
+  color: var(--color-text-main);
+}
+
+.Comment div button {
   float: right;
   width: 10%;
   background: none;
@@ -26,16 +33,16 @@
   cursor: pointer;
 }
 
-.Comment > div button:hover {
+.Comment div button:hover {
   color: var(--color-canopy-danger);
 }
 
 @media (max-width: 650px) {
-  .Comment > div > p {
+  .Comment div p {
     width: 75%;
   }
 
-  .Comment > div button {
+  .Comment div button {
     width: 5%;
   }
 }

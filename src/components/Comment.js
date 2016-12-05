@@ -7,19 +7,27 @@ const Comment = ({
 }) => {
   return(
     <li className="Comment type">
-      <h4>{item.author}</h4>
-      <div>
-        { item.type === "tech" &&
-          <button
-            aria-label="Delete Comment"
-            title="Delete Comment"
-            id={item.id}
-            onClick={clickHandler}>
-            <i className="fa fa-2x fa-trash-o" aria-hidden="true"></i>
-          </button>
-        }
-        <p>{item.body}</p>
-      </div>
+      { item.type === "tech"
+        ?<div>
+          <h4>Tech: <strong>{item.author}</strong></h4>
+          <div>
+            <button
+              aria-label="Delete Comment"
+              title="Delete Comment"
+              id={item.id}
+              onClick={clickHandler}>
+              <i className="fa fa-2x fa-trash-o" aria-hidden="true"></i>
+            </button>
+            <p>{item.body}</p>
+          </div>
+        </div>
+        :<div>
+          <h4>Customer: <strong>{item.author}</strong></h4>
+          <div>
+            <p className="customer">{item.body}</p>
+          </div>
+        </div>
+      }
     </li>
   );
 }
